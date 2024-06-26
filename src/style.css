@@ -7,9 +7,14 @@ body {
 
 h1 {
     color: #000;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
 }
 
 .special-text {
-    color: #5C0A83;
+    color: #7e22ce;
     text-decoration: none;
 }
