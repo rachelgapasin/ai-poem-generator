@@ -7,36 +7,51 @@
     <title>PoeticPetals</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to the PoeticPetals AI Poem Generator!</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>PoeticPetals: AI Poem Generator</h1>
+        <p>Generate your own poem using AI! Feel free to be as silly or passionate as your heart desires!</p>
+      </header>
 
-    <main>
-      <form action="">
-        <input type="text" placeholder="Enter the topic of your poem." autofocus required autocomplete="off"/>
-        <input type="submit" />
-      </form>
-      <div id="poem">
-        The poem will go here...
-      </div>
-    </main>
+      <main>
+        <form action="">
+          <input
+            type="text"
+            placeholder="Enter the topic of your poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="prompt"
+          />
+          <input type="submit" class="submit-btn" />
+        </form>
+        <div class="poem-container">
+          <div id="poem">
+            How do I love thee? Let me count the ways. <br />I love thee to the
+            depth and breadth and height <br />My soul can reach, when feeling
+            out of sight <br />
+            For the ends of being and ideal grace.
+          </div>
+        </div>
+      </main>
 
-    <footer>
-      <a
-        href="https://github.com/rachelgapasin/ai-poem-generator"
-        target="_blank"
-        class="special-text"
-        >Open-source code</a
-      >
-      by
-      <a
-        href="https://rachelgapasin.netlify.app/"
-        target="_blank"
-        class="special-text"
-        >Rachel Gapasin</a
-      >
-      👩🏽‍💻
-    </footer>
+      <footer>
+        <a
+          href="https://github.com/rachelgapasin/ai-poem-generator"
+          target="_blank"
+          class="special-text"
+          >Open-source code</a
+        >
+        by
+        <a
+          href="https://rachelgapasin.netlify.app/"
+          target="_blank"
+          class="special-text"
+          >Rachel Gapasin</a
+        >
+        👩🏽‍💻
+      </footer>
+    </div>
     <script src="/src/script.js"></script>
   </body>
 </html>
