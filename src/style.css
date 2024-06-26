@@ -1,0 +1,15 @@
+body {
+    background-image: linear-gradient(
+        rgba(196, 196, 196, 0.7),
+        rgba(196, 196, 196, 0.7)
+      ), url("/src/images/pastel-purple-flowers.avif");
+}
+
+h1 {
+    color: #000;
+}
+
+.special-text {
+    color: #5C0A83;
+    text-decoration: none;
+}
