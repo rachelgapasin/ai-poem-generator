@@ -41,8 +41,8 @@ main {
   margin: 30px 0 15px;
 }
 
-form {
-  display: flex;
+form div {
+  margin-bottom: 15px;
 }
 
 footer {
@@ -67,21 +67,35 @@ footer {
 .prompt {
   border: 1px solid rgba(39, 33, 66, 0.5);
   border-radius: 50px;
+  box-sizing: border-box;
   color: var(--primary-color);
   font-size: 16px;
   line-height: 20px;
-  padding: 16px;
-  width: 80%;
+  margin-bottom: 5px;
+  padding: 14px 20px;
+  width: 100%;
+}
+
+.poem-type {
+  line-height: 1.8;
 }
 
 .submit-btn {
   background-color: var(--primary-color);
-  border: none;
+  border: 1px solid var(--primary-color);
   border-radius: 50px;
   color: #fff;
   font-size: 15px;
-  margin-left: 10px;
   padding: 14px 24px;
+  width: 100%;
+  transition: all 200ms ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: var(--secondary-color);
+  border: 1px solid;
+  color: #000;
+  cursor: pointer;
 }
 
 .poem-container {
@@ -93,7 +107,7 @@ footer {
 
 #poem {
   border-left: 3px solid var(--primary-color);
-  line-height: 2;
+  line-height: 2.3;
   padding: 5px 20px;
 }
 
@@ -114,6 +128,10 @@ footer {
     font-size: 14px;
   }
 
+  .container {
+  margin: 40px auto;
+}
+
   .form-container {
     margin-bottom: 15px;
     padding: 17px;
@@ -130,6 +148,6 @@ footer {
 
   #poem {
     font-size: 13px;
-    padding: 0px 15px;
+    padding: 3px 15px;
   }
 }

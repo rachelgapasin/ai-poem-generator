@@ -27,20 +27,39 @@
       <main>
         <div class="form-container">
           <form id="poem-generator-form">
-            <input
-              type="text"
-              placeholder="Enter the topic of your poem"
-              autofocus
-              required
-              autocomplete="off"
-              class="prompt"
-              id="prompt-input"
-            />
+            <div>
+              <input
+                type="text"
+                placeholder="Enter the topic of your poem"
+                autofocus
+                required
+                autocomplete="off"
+                class="prompt"
+                id="prompt-input"
+              />
+              <div>
+                <small>
+                  e.g. love, flowers, spring (you can also add a longer
+                  description!)
+                </small>
+              </div>
+            </div>
+            <div class="poem-type">
+              <legend>Select your poem type:</legend>
+              <input type="radio" id="haiku" name="poem_type" value="haiku" />
+              <label for="haiku">Haiku</label>
+              <input
+                type="radio"
+                id="free-verse"
+                name="poem_type"
+                value="free-verse"
+              />
+              <label for="free-verse">Free Verse</label>
+              <input type="radio" id="sonnet" name="poem_type" value="sonnet" />
+              <label for="sonnet">Sonnet</label>
+            </div>
             <input type="submit" class="submit-btn" />
           </form>
-          <small>
-            e.g. love, flowers, spring (you can also add a longer description!)
-          </small>
         </div>
         <div class="poem-container" hidden>
           <div id="poem"></div>
