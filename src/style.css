@@ -10,6 +10,7 @@ body {
       rgba(196, 196, 196, 0.65)
     ),
     url("/src/images/pastel-purple-flowers.avif");
+  padding: 0 15px;
 }
 
 .container {
@@ -26,7 +27,7 @@ h1 {
 }
 
 header p {
-  margin-top: 0;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -36,10 +37,6 @@ main {
 
 form {
   display: flex;
-}
-
-small {
-  margin-left: 10px;
 }
 
 footer {
@@ -92,4 +89,42 @@ footer {
   border-left: 3px solid var(--primary-color);
   line-height: 2;
   padding: 5px 20px;
+}
+
+/* for phones */
+@media (max-width: 575px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  main {
+    margin: 10px 0;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+
+  header p,
+  .form-container,
+  .prompt,
+  .submit-btn,
+  #poem {
+    font-size: 14px;
+  }
+
+  .form-container {
+    margin-bottom: 15px;
+    padding: 17px;
+  }
+
+  .prompt,
+  .submit-btn,
+  .poem-container {
+    padding: 10px 15px;
+  }
+
+  #poem {
+    padding: 0px 15px;
+  }
 }
