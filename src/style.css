@@ -4,6 +4,12 @@
   --box-shadow: 0px 20px 6px rgba(65, 50, 100 0.08);
 }
 
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   background-image: linear-gradient(
       rgba(196, 196, 196, 0.65),
@@ -94,22 +100,17 @@ footer {
 /* for phones */
 @media (max-width: 575px) {
   h1 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   main {
     margin: 10px 0;
   }
 
-  footer {
-    font-size: 12px;
-  }
-
   header p,
   .form-container,
   .prompt,
-  .submit-btn,
-  #poem {
+  .submit-btn {
     font-size: 14px;
   }
 
@@ -119,12 +120,16 @@ footer {
   }
 
   .prompt,
-  .submit-btn,
-  .poem-container {
+  .submit-btn {
     padding: 10px 15px;
   }
 
+  .poem-container {
+    padding: 15px;
+  }
+
   #poem {
+    font-size: 13px;
     padding: 0px 15px;
   }
 }
