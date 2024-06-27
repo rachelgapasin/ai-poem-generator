@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="/src/style.css" />
     <title>PoeticPetals</title>
   </head>
@@ -11,7 +12,10 @@
     <div class="container">
       <header>
         <h1>PoeticPetals: AI Poem Generator</h1>
-        <p>Generate your own poem using AI! Feel free to be as silly or passionate as your heart desires!</p>
+        <p>
+          Generate your own poem using AI! Feel free to be as silly or
+          passionate as your heart desires!
+        </p>
       </header>
 
       <main>
@@ -23,16 +27,12 @@
             required
             autocomplete="off"
             class="prompt"
+            id="prompt-input"
           />
           <input type="submit" class="submit-btn" />
         </form>
-        <div class="poem-container">
-          <div id="poem">
-            How do I love thee? Let me count the ways. <br />I love thee to the
-            depth and breadth and height <br />My soul can reach, when feeling
-            out of sight <br />
-            For the ends of being and ideal grace.
-          </div>
+        <div class="poem-container" hidden>
+          <div id="poem"></div>
         </div>
       </main>
 
