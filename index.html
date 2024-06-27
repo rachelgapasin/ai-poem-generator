@@ -19,18 +19,23 @@
       </header>
 
       <main>
-        <form id="poem-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of your poem"
-            autofocus
-            required
-            autocomplete="off"
-            class="prompt"
-            id="prompt-input"
-          />
-          <input type="submit" class="submit-btn" />
-        </form>
+        <div class="form-container">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of your poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="prompt"
+              id="prompt-input"
+            />
+            <input type="submit" class="submit-btn" />
+          </form>
+          <small>
+            e.g. love, flowers, spring (you can also add a longer description!)
+          </small>
+        </div>
         <div class="poem-container" hidden>
           <div id="poem"></div>
         </div>

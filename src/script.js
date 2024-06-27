@@ -20,6 +20,7 @@ function generatePoem(event) {
 
   let poemContainer = document.querySelector(".poem-container");
   poemContainer.removeAttribute("hidden");
+
   new Typewriter("#poem", {
     strings: "Generating poem...",
     autoStart: true,
