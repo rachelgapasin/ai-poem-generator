@@ -11,12 +11,13 @@
 }
 
 body {
+  background-color: #D5BDD8;
   background-image: linear-gradient(
       rgba(196, 196, 196, 0.65),
       rgba(196, 196, 196, 0.65)
     ),
     url("/src/images/pastel-purple-flowers.avif");
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 .container {
@@ -93,7 +94,7 @@ footer {
 
 .submit-btn:hover {
   background-color: var(--secondary-color);
-  border: 1px solid;
+  border: 1px solid rgba(39, 33, 66, 0.5);
   color: #000;
   cursor: pointer;
 }
